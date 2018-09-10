@@ -1,0 +1,166 @@
+@charaset utf-8;
+
+/* ========================================================
+header-v01.css - ヘッダ スタイルv1
+======================================================== */
+
+/* header - レイアウト
+-------------------------------------------------------- */
+.header{
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+}
+.header-inside{
+  width: 1350px;
+  margin: 1.2rem auto 1rem;
+}
+.header-logo{
+  float: left;
+  width: 240px;
+}
+.header-info{
+  float: right;
+  width: calc(100% - 240px);
+}
+.header-tel,
+.header-menu{
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .header-info{
+    right: 1rem;
+  }
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .header{
+    background: #172071;
+    min-width: 1000px;
+  }
+  .header-info{
+    right: 3rem;
+  }
+}
+
+/* header - テーマ（レイアウト以外の各種デザイン）
+-------------------------------------------------------- */
+.header-theme{
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .header-theme{
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .header-inside {
+    font-size: 2rem;
+  }
+  img.img-logo {
+    width: 180px
+  }
+  img.img-logo-shape {
+    width: 34px
+  }
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  img.img-logo {
+    width: 240px;
+  }
+}
+
+/* nav - レイアウト
+-------------------------------------------------------- */
+.nav-trigger {
+  display: none;
+  position: fixed;
+  right: 3rem;
+  top: 0;
+  z-index: 10;
+}
+.nav-global {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  }
+
+/* nav-global - テーマ
+-------------------------------------------------------- */
+.nav-trigger-theme{
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #222;
+  color: #222;
+  font-size: 4rem;
+  padding: 1rem 1.5rem;
+}
+.nav-global-theme{
+  background: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  font-size: 1.8rem;
+  overflow-y: scroll;
+  -ms-overflow-style:none;
+  padding: 2rem 3rem;
+  height: 100%;
+}
+@-moz-document url-prefix() {
+	.nav-global-theme {
+		margin-right: -14px !important;
+		padding-right: 14px !important;
+	}
+}
+.nav-global-theme::-webkit-scrollbar {
+	display: none;
+}
+.nav-list{
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.nav-list-item{
+  border-bottom: 1px solid #fff;
+}
+.nav-list-item:last-child{
+  border: 0;
+}
+.nav-list-item a{
+  color: #fff;
+  display: block;
+  padding: 3rem 1rem;
+}
+.nav-list-item a:hover,
+.nav-list-item a:active,
+.nav-list-item a:focus{
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .nav-trigger{
+    right: 0;
+  }
+  .nav-global-theme{
+    padding: 0;
+    width: 100%;
+  }
+  .nav-list{
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .nav-global-theme{
+    width: 300px;
+  }
+}

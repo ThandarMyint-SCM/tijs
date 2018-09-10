@@ -1,0 +1,75 @@
+@charaset utf-8;
+
+/* ========================================================
+footer-v01.css - フッタ スタイルv1
+======================================================== */
+
+/* header - レイアウト
+-------------------------------------------------------- */
+.footer {
+  width: 100%;
+}
+
+/* header - テーマ（レイアウト以外の各種デザイン）
+-------------------------------------------------------- */
+.footer-theme {
+  background: #192d72;
+  color: #fff;
+}
+.footer-copyright {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .footer-copyright {
+    font-size: 1.2rem;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    font-size: 1.8rem;
+  }
+}
+
+/* pagetop
+-------------------------------------------------------- */
+.pagetop {
+  position: fixed;
+}
+
+.pagetop-theme a {
+  background: #f28357;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.pagetop-theme a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .pagetop {
+    bottom: 4rem;
+    right: 1rem;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+  .pagetop {
+    bottom: 5rem;
+    right: 2rem;
+  }
+}

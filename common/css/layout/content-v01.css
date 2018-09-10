@@ -1,0 +1,59 @@
+@charaset utf-8;
+
+/* ========================================================
+content-v01.css - コンテンツ スタイルv1
+======================================================== */
+
+/* content, section - レイアウト
+-------------------------------------------------------- */
+.content{
+  width: 100%;
+  margin: 0 auto;
+}
+.sec{
+  margin: 0 auto;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .content{
+    padding-bottom: 5rem;
+  }
+  .sec-full{
+    width: 98%;
+  }
+  .sec-min{
+    width: 96%;
+  }
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .sec{
+    padding: 2rem 0;
+  }
+  .sec-full{
+    width: 1200px;
+  }
+  .sec-min{
+    width: 980px;
+  }
+}
+
+/* content, section - テーマ
+-------------------------------------------------------- */
+.sec-theme-01{
+  background: #192d72;
+  color: #fff;
+}
+.sec-theme-02{
+  background-color: #fff;
+  color: #222;
+}
+.sec-theme-03{
+  background-color: rgba(208, 108, 112, 0.851);
+  color: #fff;
+}
+.sec-theme-04{
+  background-color: #fef9f6;
+  color: #222;
+}
