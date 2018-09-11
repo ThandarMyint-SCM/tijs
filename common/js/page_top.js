@@ -1,7 +1,7 @@
 //slick.js - スライダープラグイン
 $(function() {
   $('.jsSliderTop').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     autoplaySpeed: 3000,
     speed: 700,

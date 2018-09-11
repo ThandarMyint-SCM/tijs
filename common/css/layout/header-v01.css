@@ -10,10 +10,18 @@ header-v01.css - ヘッダ スタイルv1
   display: inline-block;
   width: 100%;
   vertical-align: bottom;
+  position: relative;
 }
-.header-inside{
-  width: 1350px;
-  margin: 1.2rem auto 1rem;
+.header-inside {
+  background: #172071;
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+}
+.w-1349 {
+  display: block;
+  margin: 0 auto;
+  width: 1349px;
 }
 .header-logo{
   float: left;
@@ -23,27 +31,20 @@ header-v01.css - ヘッダ スタイルv1
   float: right;
   width: calc(100% - 240px);
 }
+.header-letter, .header-tel {
+  color: #fff;
+}
 .header-tel,
 .header-menu{
   display: inline-block;
   vertical-align: bottom;
 }
-
-/* sp */
-@media screen and (max-width: 767px) {
-  .header-info{
-    right: 1rem;
-  }
-}
-/* pc */
-@media screen and (min-width: 768px) {
-  .header{
-    background: #172071;
-    min-width: 1000px;
-  }
-  .header-info{
-    right: 3rem;
-  }
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
 }
 
 /* header - テーマ（レイアウト以外の各種デザイン）
@@ -87,12 +88,8 @@ header-v01.css - ヘッダ スタイルv1
   z-index: 10;
 }
 .nav-global {
-  display: none;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 100;
-  }
+
+}
 
 /* nav-global - テーマ
 -------------------------------------------------------- */
@@ -104,13 +101,10 @@ header-v01.css - ヘッダ スタイルv1
   padding: 1rem 1.5rem;
 }
 .nav-global-theme{
-  background: rgba(34, 34, 34, 0.8);
-  color: #fff;
-  font-size: 1.8rem;
-  overflow-y: scroll;
-  -ms-overflow-style:none;
-  padding: 2rem 3rem;
-  height: 100%;
+  background: rgba(255, 255, 255, 0.7803921568627451);
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
 }
 @-moz-document url-prefix() {
 	.nav-global-theme {
@@ -122,26 +116,70 @@ header-v01.css - ヘッダ スタイルv1
 	display: none;
 }
 .nav-list{
+  display: table;
   margin: 0 auto;
-  padding: 0 2rem;
+  width: 1180px;
 }
 .nav-list-item{
+  display: table-cell;
   border-bottom: 1px solid #fff;
+  position: relative;
+  vertical-align: bottom;
 }
 .nav-list-item:last-child{
   border: 0;
 }
 .nav-list-item a{
-  color: #fff;
-  display: block;
+  box-sizing: border-box;
+  color: #172071;
+  display: inline-block;
+  float: left;
   padding: 3rem 1rem;
+  width: 100%;
 }
 .nav-list-item a:hover,
 .nav-list-item a:active,
 .nav-list-item a:focus{
-  background: rgba(255, 255, 255, 0.1);
+  background: #172071;
+  color: #fff;
+  opacity: 1;
   text-decoration: none;
   transition: 0.5s;
+}
+.sub-nav-list {
+  background: rgba(23, 32, 113, 0.68);
+  display: none;
+  padding: 0 0.8rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 163px;
+  z-index: 999999;
+}
+.nav-list-item:hover .sub-nav-list {
+  display: inline-block;
+}
+.sub-nav-list-item {
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+}
+.sub-nav-list-item:last-child {
+  border-bottom: 0 solid transparent;
+}
+.sub-nav-list-item a {
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  padding: 1.8rem 0.7rem;
+  width: 100%;
+}
+.sub-nav-list-item a:hover,
+.sub-nav-list-item a:active,
+.sub-nav-list-item a:focus{
+  background: transparent;
+  opacity: 0.7;
 }
 
 /* sp */
@@ -161,6 +199,6 @@ header-v01.css - ヘッダ スタイルv1
 /* pc */
 @media screen and (min-width: 768px) {
   .nav-global-theme{
-    width: 300px;
+    /* width: 100%; */
   }
 }

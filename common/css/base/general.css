@@ -74,6 +74,12 @@ img.s-img-10{
 .s-disp-block{
   display: block;
 }
+.s-disp-table{
+  display: table;
+}
+.s-disp-tablec{
+  display: table-cell;
+}
 
 /* s-txt-XX - テキスト配置（text-align, vertical-align）
 -------------------------------------------------------- */
@@ -206,7 +212,7 @@ li > .s-txt-nowrap {
   color: #000;
 }
 .s-fc-01{
-  color: #133256;
+  color: #192d72;
 }
 .s-fc-02{
   color: #2e2e2e;
