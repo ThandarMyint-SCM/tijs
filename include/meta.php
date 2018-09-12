@@ -6,7 +6,7 @@ $myUrl = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") .  $_SERVER["HTTP_H
 $siteRootDirectory = '/tijs';
 
 // サイト共通タイトル
-$metaSiteTitle = '';
+$metaSiteTitle = '東京国際日本語学院';
 // サイト共通ディスクリプション
 $metaSiteDiscription = '';
 // サイト共通キーワード

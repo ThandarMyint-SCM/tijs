@@ -7,6 +7,7 @@ content-v01.css - コンテンツ スタイルv1
 /* content, section - レイアウト
 -------------------------------------------------------- */
 .content{
+  font-family: "YuGothicM";
   width: 100%;
   margin: 0 auto;
 }

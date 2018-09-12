@@ -25,7 +25,6 @@ $imgOgp = '';
 
   <!-- for page -->
   <link rel="stylesheet" href="<?php echo $siteRootDirectory ?>/common/css/custom/page_top.css">
-  <script src="<?php echo $siteRootDirectory ?>/common/js/page_top.js"></script>
 </head>
 <body>
 <?php include('./include/tag.php'); ?>
@@ -72,10 +71,7 @@ $imgOgp = '';
   </div>
   <!-- ./content -->
   <?php include('./include/footer.php'); ?>
-  <script>
-  function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
-  }
-  </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="<?php echo $siteRootDirectory ?>/common/js/page_top.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

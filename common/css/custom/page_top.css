@@ -9,19 +9,16 @@ page_top.css - トップページ用カスタムスタイル
 .mainvisual-in {
   position: absolute;
   right: 12rem;
-  top: 9rem;
-  width: 460px;
+  top: 7.2rem;
 }
 .mainvisual-lan {
   float: left;
   margin: 0 2rem 0 0;
-  width: 304px;
 }
 #google_translate_element {
   display: inline-block;
   float: right;
   padding: 0.5rem 0 0 0;
-  width: calc(100% - 324px);
 }
 .language {
   float: left;

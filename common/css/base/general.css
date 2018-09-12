@@ -679,6 +679,9 @@ li > .s-txt-nowrap {
 
 /* s-pb-XX - 下パディング指定
 -------------------------------------------------------- */
+.s-pb-5 {
+  padding-bottom: .5rem;
+}
 .s-pb-10 {
   padding-bottom: 1rem;
 }

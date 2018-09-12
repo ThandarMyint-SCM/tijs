@@ -128,7 +128,12 @@ module-v01.css - モジュール スタイルv1
 }
 .btn-level-05{
   font-size: 2.4rem;
-  padding: 4rem 0;
+  padding: 4rem 1.9rem;
+}
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 0.9rem;
+  }
 }
 
 /* btn-XX - ボタンの横幅サイズ設定 */
@@ -177,13 +182,14 @@ module-v01.css - モジュール スタイルv1
 }
 .btn-theme-03{
   background: #fff;
-  border: 1px solid #192d72;
+  border: 1px solid #ffffff;
   color: #192d72;
 }
 .btn-theme-03:hover,
 .btn-theme-03:active,
 .btn-theme-03:focus{
-  opacity: 0.7;
+  background: transparent;
+  color: #ffffff;
 }
 .btn-theme-04{
   border: 1px solid #ffffff;
@@ -192,7 +198,8 @@ module-v01.css - モジュール スタイルv1
 .btn-theme-04:hover,
 .btn-theme-04:active,
 .btn-theme-04:focus{
-  background: rgba(205,109,110,0.2);
+  background: #fff;
+  color: #192d72;
 }
 .btn-theme-05{
   background: #fff;

@@ -8,6 +8,7 @@ header-v01.css - ヘッダ スタイルv1
 -------------------------------------------------------- */
 .header{
   display: inline-block;
+  font-family: "YuGothicM";
   width: 100%;
   vertical-align: bottom;
   position: relative;
@@ -22,7 +23,9 @@ header-v01.css - ヘッダ スタイルv1
   display: block;
   margin: 0 auto;
   width: 1349px;
+  min-width: 1349px;
 }
+
 .header-logo{
   float: left;
   width: 240px;
@@ -34,17 +37,67 @@ header-v01.css - ヘッダ スタイルv1
 .header-letter, .header-tel {
   color: #fff;
 }
+.header-letter .fa-envelope {
+  font-size: 2rem;
+}
+.header-tel .fa-phone {
+  font-size: 2.5rem;
+  transform: rotate(-92deg) translateX(2px);
+  vertical-align: top;
+}
+.header-tel {
+  pointer-events: none;
+}
 .header-tel,
 .header-menu{
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .nav {
+  box-shadow: 0 2px 7px #a8a8a8;
+  left: 0;
   position: absolute;
   top: 100%;
-  left: 0;
   width: 100%;
   z-index: 999999;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .w-1349 {
+    width: 100%;
+    min-width: 100%;
+  }
+  .header-logo {
+    margin-top: 0;
+    width: auto;
+  }
+  .header-info {
+    float: left;
+    margin-bottom: 0;
+    text-align: left;
+    width: 100%;
+  }
+  .header-info span,
+  .header-letter {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .header-letter .fa-envelope {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  .header-tel {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 1.2rem;
+    pointer-events: auto;
+  }
+  .header-tel .fa-phone {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transform: rotate(-92deg) translateX(7px);
+  }
 }
 
 /* header - テーマ（レイアウト以外の各種デザイン）
@@ -58,17 +111,16 @@ header-v01.css - ヘッダ スタイルv1
 /* sp */
 @media screen and (max-width: 767px) {
   .header-theme{
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
+    padding: 1rem 2%;
   }
   .header-inside {
-    font-size: 2rem;
+    font-size: 0.9rem;
   }
   img.img-logo {
-    width: 180px
+    width: 180px;
   }
   img.img-logo-shape {
-    width: 34px
+    width: 34px;
   }
 }
 /* pc */
@@ -119,12 +171,33 @@ header-v01.css - ヘッダ スタイルv1
   display: table;
   margin: 0 auto;
   width: 1180px;
+  min-width: 1180px;
 }
 .nav-list-item{
   display: table-cell;
-  border-bottom: 1px solid #fff;
   position: relative;
   vertical-align: bottom;
+}
+.nav-list-item.has-child-item {
+  position: relative;
+}
+.nav-list-item.has-child-item::after {
+  bottom: 0.7rem;
+  color: #172071;
+  content: "\f107";
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 1.5rem;
+  height: 11px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 11px;
+}
+.nav-list-item.has-child-item:hover::after {
+  color: #fff;
+  content: "\f106";
 }
 .nav-list-item:last-child{
   border: 0;
@@ -134,12 +207,12 @@ header-v01.css - ヘッダ スタイルv1
   color: #172071;
   display: inline-block;
   float: left;
-  padding: 3rem 1rem;
+  padding: 2.3rem 1rem;
   width: 100%;
 }
-.nav-list-item a:hover,
-.nav-list-item a:active,
-.nav-list-item a:focus{
+.nav-list-item:hover >a,
+.nav-list-item:active >a,
+.nav-list-item:focus >a {
   background: #172071;
   color: #fff;
   opacity: 1;

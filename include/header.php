@@ -8,8 +8,8 @@
         <div class="header-info  s-disp-iblock s-mt-12 s-mb-10 s-txt-right">
           <span class="s-fs-16 s-mr-20">東京都新宿区新宿2-13-6</span>
           <a href="mailto:info@tijs.jp" class="header-letter s-fs-16 s-mr-20"><i class="fa fa-envelope s-mr-12" aria-hidden="true"></i>info@tijs.jp</a>
-          <a href="tel:03-3350-9761" class="header-tel s-fs-26 s-mr-20"><i class="fa fa-phone s-mr-15" aria-hidden="true"></i>03-3350-9761</a>
-          <a href="#" class="btn btn-theme-04 btn-240 btn-level-03">お問い合せ</a>
+          <a href="tel:03-3350-9761" class="header-tel s-fs-26 s-mr-20"><i class="fa fa-phone s-mr-12" aria-hidden="true"></i>03-3350-9761</a>
+          <a href="<?php echo $siteRootDirectory ?>/inquiry/" class="btn btn-theme-04 btn-240 btn-level-03">お問い合せ</a>
         </div>
       </div><!-- ./w-1349 -->
     </div>
@@ -20,33 +20,33 @@
       </div>
       <div class="nav-global nav-global-theme jsTopMenuOpen">
         <ul class="nav-list s-txt-center">
-          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">学院案内</a></li>
-          <li class="nav-list-item s-fw-b">
-            <a href="<?php echo $siteRootDirectory ?>/">コース案内</a>
+          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/about/">学院案内</a></li>
+          <li class="nav-list-item has-child-item s-fw-b">
+            <a href="<?php echo $siteRootDirectory ?>/class/">コース案内</a>
             <ul class="sub-nav-list s-txt-left">
               <li class="sub-nav-list-item s-fw-b">
-                <a href="<?php echo $siteRootDirectory ?>/">留学</a>
+                <a href="<?php echo $siteRootDirectory ?>/class/longterm/">留学</a>
               </li>
               <li class="sub-nav-list-item s-fw-b">
-                <a href="<?php echo $siteRootDirectory ?>/">遊学</a>
+                <a href="<?php echo $siteRootDirectory ?>/class/shortterm/">遊学</a>
               </li>
               <li class="sub-nav-list-item s-fw-b">
-                <a href="<?php echo $siteRootDirectory ?>/">サマーコース</a>
+                <a href="<?php echo $siteRootDirectory ?>/class/summer/">サマーコース</a>
               </li>
               <li class="sub-nav-list-item s-fw-b">
-                <a href="<?php echo $siteRootDirectory ?>/">ウィンターコース</a>
+                <a href="<?php echo $siteRootDirectory ?>/class/winter/">ウィンターコース</a>
               </li>
               <li class="sub-nav-list-item s-fw-b">
-                <a href="<?php echo $siteRootDirectory ?>/">その他</a>
+                <a href="<?php echo $siteRootDirectory ?>/class/other/">その他</a>
               </li>
             </ul>
           </li>
-          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">入学手続き</a></li>
-          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">年間スケジュール</a></li>
-          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">進学指導</a></li>
-          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">宿舎</a></li>
+          <li class="nav-list-item has-child-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">入学手続き</a></li>
+          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/about/schedule/">年間スケジュール</a></li>
+          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/about/guidance/">進学指導</a></li>
+          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/dorm/">宿舎</a></li>
           <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">インフォメーション</a></li>
-          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/">アクセス</a></li>
+          <li class="nav-list-item s-fw-b"><a href="<?php echo $siteRootDirectory ?>/accessmap/">アクセス</a></li>
         </ul>
       </div>
     </div>

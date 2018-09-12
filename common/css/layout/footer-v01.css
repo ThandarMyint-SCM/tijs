@@ -7,11 +7,26 @@ footer-v01.css - フッタ スタイルv1
 /* header - レイアウト
 -------------------------------------------------------- */
 .footer {
+  font-family: "YuGothicM";
+  letter-spacing: 0.5px;
   width: 100%;
 }
 .footer-inside {
-  padding: 5.3rem 0 3.4rem;
+  padding: 5.3rem 0 0;
   text-align: center;
+}
+.footer-link .fa-chevron-right {
+  float: right;
+}
+.footer-fb {
+  display: block;
+}
+.footer-fb .fa-facebook-square {
+  color: #fff;
+  font-size: 4.8rem;
+}
+.footer-fb a:hover {
+  opacity: 0.7;
 }
 .footer-info {
   line-height: 1.5;
